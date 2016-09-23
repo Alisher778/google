@@ -195,3 +195,80 @@ footer li{
   float: left;
   margin: 0 auto;
 }
+
+/*-------------Main PAge ENDS here----------*/
+
+/*--------- SEARCH PAGE starts here------------*/
+.top-section{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 6px 1px;
+  border: 1px solid;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #e5e5e5;
+  border-color: #e5e5e5;
+}
+.logo{
+  position: relative;
+  top: 15px;
+  left: 12px;
+  height: 35px;
+  width: auto;
+}
+.search-form input{
+  height: 26px;
+  width: 600px;
+  padding: 6px 9px 4px;
+  margin-left: 15px;
+  font-size: 18px;
+}
+.microphone{
+  height: 30px;
+  width: 28px;
+  position: relative;
+  top: 8px;
+  left: -36px;
+}
+.search{
+  height: 40px;
+    width: 40px;
+    background: url(images/search.png)no-repeat center center;
+    background-size: contain;
+    position: relative;
+    top: 10px;
+    left: -37px;
+    border-style: none;
+}
+div.sub-heading.page2{
+  position: absolute;
+    right: 0;
+    top: 0;
+}
+/*-------- Sort section -----------*/
+.sort-wrapper{
+  width: 100%;
+}
+.sort-box{
+  height: 30px;
+  width: 100%;
+  position: relative;
+  left: 10%;
+  top: 76px;
+}
+.sort-box ul li{
+  list-style: none;
+  display: inline-block;
+}
+.more-invisible{
+  display: block;
+  position: absolute;
+  top: 1px;
+  width: 60px;
+  height: 200px;
+}
+.more-invisible li{
+  display: block;
+}
+
