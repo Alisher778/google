@@ -1,68 +1,72 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Search Page</title>
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Search Page</title>
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-</head>
-<body>
-  <div class="top-section">
-    <div class="search-form">
-      <img src="images/logo.png" alt="google logo" class="logo">
-      <input type="text" name="search" />
-      <a href="#"><img src="images/microphone.png" alt="microphone" class="microphone"></a>
-      <button type="button" class="search"></button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="top-section">
+      <div class="search-form">
+        <img src="images/logo.png" alt="google logo" class="logo">
+        <input type="text" name="search" class="searchInput" />
+        <a href="#"><img src="images/microphone.png" alt="microphone" class="microphone"></a>
+        <button type="button" class="search"></button>
+      </div>
+      <div class="sub-heading page2">
+        <ul class="img-links">
+          <li><a href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/?tab%3Dwm&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1">Gmail</a></li>
+          <li><a href="https://www.google.com/imghp?hl=en&tab=wi&ei=NcXhV-XnOInUepv1ifAI&ved=0EKouCBYoAQ">Images</a></li>
+          <li id="hover-img"><a href=""><img src="images/menu.png" alt="menu"></a>
+          <ul class="apps">
+            <i class="fa fa-sort-asc" style="position: absolute; top: -14px; right: 87px; font-size: 41px; color: white;text-shadow: 0px -3px 2px #cccccc;"></i>
+            <li><a href="https://myaccount.google.com/intro?utm_source=OGB"><img src="images/my_account.png" alt="">My Account</a></li>
+            <li><a href="https://www.google.com/webhp?ei=V8ThV5OMHc6d-AHH94_ABQ&ved=0EKkuCAQoAQ"><img src="images/search.jpeg" alt="">Search</a></li>
+            <li><a href="https://www.google.com/maps/@40.7032286,-74.000805,15z?hl=en"><img src="images/maps.jpeg" alt="">Maps</a></li>
+            <li><a href="https://www.youtube.com/"><img src="images/youtube.jpeg" alt="">Youtube</a></li>
+            <li><a href="https://play.google.com/store?hl=en&tab=w8"><img src="images/play.jpeg" alt="">Play</a></li>
+            <li><a href="https://news.google.com/nwshp?hl=en&tab=8n&ei=pMThV6nCMsPUmAHkw6noDA&ved=0EKkuCAsoBQ"><img src="images/news.jpeg" alt="">News</a></li>
+            <li><a href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/?tab%3Dnm&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1"><img src="images/gmail.png" alt="">Gmail</a></li>
+            <li><a href="https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://drive.google.com/?tab%3Dno%26urp%3Dhttps://news.google.com/%23&followup=https://drive.google.com/?tab%3Dno%26urp%3Dhttps://news.google.com/&ltmpl=drive&emr=1"><img src="images/drive.png" alt="">Drive</a></li>
+            <li><a href="https://accounts.google.com/ServiceLogin?service=cl&passive=1209600&osid=1&continue=https://calendar.google.com/calendar/render?tab%3Dnc&followup=https://calendar.google.com/calendar/render?tab%3Dnc&scc=1"><img src="images/calendar.jpeg" alt="">Calendar</a></li>
+            <li><a href="https://plus.google.com/collections/featured"><img src="images/google+.jpeg" alt="">Google+</a>G</li>
+            <li><a href="https://translate.google.com/?hl=en"><img src="images/translate.jpeg" alt="">Translate</a></li>
+            <li><a href="https://www.google.com/photos/about/"><img src="images/photos.png" alt="">Photos</a></li>
+            <a href=""><button class="btn">More</button></a>
+          </ul>
+        </li>
+        <li><a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/"><button type="button" name="sign_in">Sign In</button></a></li>
+      </ul>
     </div>
-    <div class="sub-heading page2">
-      <ul class="img-links">
-        <li><a href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/?tab%3Dwm&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1">Gmail</a></li>
-        <li><a href="https://www.google.com/imghp?hl=en&tab=wi&ei=NcXhV-XnOInUepv1ifAI&ved=0EKouCBYoAQ">Images</a></li>
-        <li id="hover-img"><a href=""><img src="images/menu.png" alt="menu"></a>
-        <ul class="apps">
-          <i class="fa fa-sort-asc" style="position: absolute; top: -14px; right: 87px; font-size: 41px; color: white;text-shadow: 0px -3px 2px #cccccc;"></i>
-          <li><a href="https://myaccount.google.com/intro?utm_source=OGB"><img src="images/my_account.png" alt="">My Account</a></li>
-          <li><a href="https://www.google.com/webhp?ei=V8ThV5OMHc6d-AHH94_ABQ&ved=0EKkuCAQoAQ"><img src="images/search.jpeg" alt="">Search</a></li>
-          <li><a href="https://www.google.com/maps/@40.7032286,-74.000805,15z?hl=en"><img src="images/maps.jpeg" alt="">Maps</a></li>
-          <li><a href="https://www.youtube.com/"><img src="images/youtube.jpeg" alt="">Youtube</a></li>
-          <li><a href="https://play.google.com/store?hl=en&tab=w8"><img src="images/play.jpeg" alt="">Play</a></li>
-          <li><a href="https://news.google.com/nwshp?hl=en&tab=8n&ei=pMThV6nCMsPUmAHkw6noDA&ved=0EKkuCAsoBQ"><img src="images/news.jpeg" alt="">News</a></li>
-          <li><a href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/?tab%3Dnm&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1"><img src="images/gmail.png" alt="">Gmail</a></li>
-          <li><a href="https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://drive.google.com/?tab%3Dno%26urp%3Dhttps://news.google.com/%23&followup=https://drive.google.com/?tab%3Dno%26urp%3Dhttps://news.google.com/&ltmpl=drive&emr=1"><img src="images/drive.png" alt="">Drive</a></li>
-          <li><a href="https://accounts.google.com/ServiceLogin?service=cl&passive=1209600&osid=1&continue=https://calendar.google.com/calendar/render?tab%3Dnc&followup=https://calendar.google.com/calendar/render?tab%3Dnc&scc=1"><img src="images/calendar.jpeg" alt="">Calendar</a></li>
-          <li><a href="https://plus.google.com/collections/featured"><img src="images/google+.jpeg" alt="">Google+</a>G</li>
-          <li><a href="https://translate.google.com/?hl=en"><img src="images/translate.jpeg" alt="">Translate</a></li>
-          <li><a href="https://www.google.com/photos/about/"><img src="images/photos.png" alt="">Photos</a></li>
-          <a href=""><button class="btn">More</button></a>
-        </ul>
-      </li>
-      <li><a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/"><button type="button" name="sign_in">Sign In</button></a></li>
-    </ul>
-  </div>
   </div>
   <div class="sort-wrapper">
     <div class="sort-box">
       <ul>
-        <li><a href="#">All</a></li>
+        <li><a href="iframe.html" target="open_link">All</a></li>
         <li><a href="#">News</a></li>
         <li><a href="#">Images</a></li>
         <li><a href="#">Shopping</a></li>
         <li><a href="#">Videos</a></li>
-        <li><a href="#">More</a></li>
-        <li><a href="#" id="more"></a>
-          <ul class="more-invisible">
-            <li><a href="#">Maps</a></li>
-            <li><a href="#">Books</a></li>
-            <li><a href="#">Flights</a></li>
-            <li><a href="#">Apps</a></li>
-          </ul>
+        <li id="more"><a href="#">More<i class="fa fa-sort-desc"></i></a>
+          <div class="more-invisible">
+            <a href="#">Maps</a>
+            <a href="#">Books</a>
+            <a href="#">Flights</a>
+            <a href="#">Apps</a>
+          </div>
         </li>
         <li><a href="#">Search tools</a></li>
       </ul>
     </div>
+  </div>
+  <div>
+    <iframe src="iframe.html" frameborder="0" name="open_link" scrolling="no"></iframe>
   </div>
 </body>
 </html>
